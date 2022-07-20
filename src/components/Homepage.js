@@ -5,11 +5,11 @@ import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from './logo.png';
 
-const FirstLeftText = () => <p>IBM Observability by Instana</p>;
+const FirstLeftText = () => <p>IBM SevOne Workshop</p>;
 
 const FirstRightText = () => (
   <p>
-    Learn about IBM's Instana. This site contains example labs, tutorials, and partner instructions.
+    Learn about IBM's SevOne. This site contains example labs, tutorials, and partner instructions.
   </p>
 );
 
