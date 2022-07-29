@@ -19,7 +19,7 @@ Navigate to Active Alerts.
 
 Make sure the time period is set to Past 48 Hours as shown here.
 
-![Lab 1](images/lab1.2.png)
+![Lab 1](images/1.2.png)
 
 ## Step 2:
 
@@ -27,47 +27,78 @@ Go to device groups in the top left.
 
 Search for P1 as shown below
 
-![Lab 1](images/lab1.3.png)
+![Lab 1](images/1.3.png)
 
 Now we can check out the most severe alerts.
 
 Look for the Chicago Firewall alert and click on the CISCO summary.
 
-![Lab 1](images/lab1.4.png)
+![Lab 1](images/1.4.png)
 
 ## Step 3:
 
-You will see a list of supported technologies on the sidebar. 
+Navigate to the connections tab and notice the drops on the graph as shown here.
 
-Select Linux from the list.
+![Lab 1](images/1.5.png)
 
-![Lab 1](images/lab1.5.png)
+Check out some of the other tabs until you get to the CPU window. 
 
-Leave the options at their default settings, and select the "Install and start as a service" option.
+Notice that the cpu has similar spikes as seen before. 
 
-When you are ready, hit the Copy button to copy the one-liner to your clipboard.
+Click on the graph spike and navigate to the Instant Graphs Workspace.
+
+![Lab 1](images/1.6.png)
 
 ## Step 4:
 
-SSH into the training host that has been provided as “ubuntu” (your instructor will provide a host IP address and password).
+Once you see the CPU screen add the connections object like so.
 
-```
-ssh ubuntu@<IP address>
-```
+![Lab 1](images/1.7.png)
 
-Paste the CURL statement that you copied in the last step into your terminal window and hit enter. 
-You should see a screen that will look similar to the one below. Please enter “y” and hit enter. This will  start the installation process.
+Everything will go blank, just add the 5 minute average and current connections as indicators.
 
-![Lab 1](images/lab1.6.png)
+![Lab 1](images/1.8.png)
+
+Now we can see the correlation between a drop in connections and high cpu usage.
+
+![Lab 1](images/1.9.png)
 
 ## Step 5:
 
-Once the installation is complete, we need to validate that our work has been successful. 
-To accomplish this, we will want to navigate to the Infrastructure page of the Instana UI. 
+Navigate back a page. 
 
-Note: You may need to refresh and give it a minute. 
+![Lab 1](images/1.10.png)
 
-![Lab 1](images/lab1.7.png)
+Then move over to the processes tab.
+
+![Lab 1](images/1.11.png)
+
+## Step 6: 
+
+Order the CPU Time graph by max to check which process uses the most time. 
+
+![Lab 1](images/1.12.png)
+
+Click on the average CPU time for the SSL process
+
+![Lab 1](images/1.13.png)
+
+## Step 7: 
+
+It is evident that the spikes on the graph are not normal.
+
+![Lab 1](images/1.14.png)
+
+So now that we know that high cpu is generated from the SSL processes. We can
+google some possible reasons for this.
+
+Enter the following into google chrome.
+
+![Lab 1](images/1.15.png)
+
+After clicking on the first link we get this answer:
+
+![Lab 1](images/1.16.png)
 
 When in the infrastructure map section, we will see an open text field. 
 We are using DFQ or “Dynamic Focus Query” to filter the content on the screen. 
