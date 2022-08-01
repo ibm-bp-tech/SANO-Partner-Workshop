@@ -100,15 +100,37 @@ After clicking on the first link we get this answer:
 
 ![Lab 1](images/1.16.png)
 
-When in the infrastructure map section, we will see an open text field. 
-We are using DFQ or “Dynamic Focus Query” to filter the content on the screen. 
+So we can see that SYN attacks could be the cause for high cpu.
 
-In this scenario, we will use DFQ to filter on our host using:
+Let's investigate further.
 
-```
-entity.host.name:<your host name> 
-```
+## Step 8:
 
-![Lab 1](images/lab1.8.png)
+Navigate to the Flow tab at the very right.
 
-If you see your host in the map, you have validated that the installation was successful. 
+![Lab 1](images/1.17.png)
+
+At the bottom we have a Denial of Service graph. Where we can see
+a large amount of TCP/SYN packets.
+
+![Lab 1](images/1.18.png)
+
+So we have found the culprit.
+
+## Step 9:
+
+To make sure we have the right answer, navigate to the connections tab.
+
+![Lab 1](images/1.19.png)
+
+Then configure the graph as shown below.
+
+![Lab 1](images/1.20.png)
+
+We can now see a direct correlation between the spikes and drops on both graphs.
+
+![Lab 1](images/1.21.png)
+
+So we have determined the cause of high cpu usage.
+
+
