@@ -1,106 +1,128 @@
 ---
 export const Title = () => (
   <span>
-    Lab 2 - Agent Troubleshooting <br />
+    Lab 2 - Executive Report <br />
   </span>
 );
 ---
-For this lab we will focus on Linux deployments of the Instana agent.
+
+This demo shows how we can create executive/managerial reports in SevOne in a way that the audience can easily understand
+the status of the network and can control and maintain the SLAs.
+
+For a background on this specific hypothetical situation, a network manager wants to review the current status of the network because there were some problems 
+yesterday with one of the internal services. The manager wants to make sure there is no problem now.
+
+On top of this, the network manager wants to review if there is any SLA being breached in any of their offices, just to make sure everything in the network is 
+running smoothly.
+
 
 ## Step 1:
+From the SevOne homepage, open the Executive Report file using the search bar.
 
-We will SSH into the machine that was provided to us. Agent logs are located at:
+![Lab 2](images/2.1.png)
 
-```
-/opt/instana/agent/data/log
-```
+Upon entering the file, your screen should look like this:
 
-In the event that there is an issue, this would be where we would pull our logfiles. 
+![Lab 2](images/2.2.png)
 
-This is an important area to have knowledge of, as support will ask for these logs during troubleshooting sessions. 
+This is a dashboard to show you a big picture view of your service status. 
+On the top two panels, you can see the health of your services, and on the bottom two, you can see the availability of the services.
 
-It is also possible to download the logs in the UI if you have access to the UI.
-
-## Step 2: 
-
-To start agent debug logging, you will need to stop the agent.
-
-Enter the following in your terminal window:
-
-```
-sudo service instana-agent stop
-```
-
-We can then validate that the service has stopped by entering:
-
-```
-sudo service instana-agent status
-```
-
-Hint: type “q” to exit status command.
+## Step 2:
+Focus in on the health of the services panel on the top left. As you can see, the Pulsar application is having some issues. 
+Select the Pulsar icon to drill down into the service.
 
 ![Lab 2](images/2.3.png)
 
+Once you select this, the dashboard becomes specific to the Pulsar application. 
+If you look at the graph on the top right, you can see the times that there were problems with the service. 
+The availability goes down at night, which is normal, but during the day it is a problem.
+
+![Lab 2](images/2.4.png)
 
 ## Step 3:
+To drill down to get more information, go to the Availability Service panel in the bottom left. 
+Click Pulsar in Device Name and then select Business Application Report.
 
-Delete all of the files in /opt/instana/agent/data/logs
+![Lab 2](images/2.5.png)
 
-```
-sudo rm *
-```
+Here you can click through the different views of the application report, including Status, Availability, WAN, IPSLA, and more, depending on 
+what information you are looking for exactly. Take some time to see the different views.
 
-Check to make sure files are deleted.
+We are going to jump to the Traffic page.
+
+![Lab 2](images/2.6.png)
+
+The points of high traffic utilization might explain why there was poor health during the day on this service.
 
 ## Step 4:
+Now we are going to look at the system’s WAN status. 
+In the upper left-hand corner, underneath the title Business Application Report, click the link to take you back to the main dashboard for the Executive Report. 
+Once you’re there, click on the Global WAN Report page. 
 
-To set the log level to debug, first browse to 
+![Lab 2](images/2.7.png)
 
-```
-/opt/instana/agent/etc
-```
+Here you can see a map of your network, where you are able to view primary and secondary connections. 
+We’re just going to focus on primary connections, so you can deselect secondary.
 
-We will be editing org.ops4j.pax.logging.cfg using the vi editor.
+The map will show the overall status of the WAN health for each office, as well as the status of the links. 
+With the green/orange/red markers, we can easily identify if there is a problem with that office or link at that point in time.
 
-Note that a list of common vi commands are provided towards the end of this Lab Material. 
+The heatmap down below allows us to see historical data and if there was any problem in the past. 
+The red blocks show problems in the past at the Chicago office.
 
-```
-sudo vi org.ops4j.pax.logging.cfg
-```
-
-![Lab 2](images/lab2.2.png)
-
-Now, change from INFO to DEBUG on the line seen below.
-Check out vi commands if you are experiencing an issue.
-
-![Lab 2](images/lab2.3.png)
-
-Once you have modified with the proper value, save your work.
+![Lab 2](images/2.8.png)
 
 ## Step 5:
+To drill down further, click CHI in the WAN Health panel and select Global WAN Health.
 
-Start the agent by entering the following line into the terminal window:
+![Lab 2](images/2.9.png)
 
-```
-sudo service instana-agent start
-```
+Once you do that, you view should look like this:
 
-Validate that the service has started by entering:
+![Lab 2](images/2.10.png)
 
-```
-sudo service instana-agent status
-```
+Here you get a side-by-side view of the problems in the CHI office on the left, and then the reasons for those problems on the right.
+NOTE: depending on the time of the day, the applications generating spikes might be different.
 
 ## Step 6:
+Now click on WAN Quality. Your view should look like this:
 
-Verify logging is now at Debug by viewing the
+![Lab 2](images/2.11.png)
 
-```
-/opt/instana/agent/data/log
-```
+To calculate the WAN health we use several indicators, including IPSLA quality, errors, etc.
+This view shows that there was also a problem with one of the IPSLA, also impacting on the health of the WAN network on that office.
 
-Feel free to revert the log level to INFO if you'd like.
+To drill down even further, click on events. Your view should look like this:
 
+![Lab 2](images/2.12.png)
+
+Here we can review the actual events that have happened on the WAN network of that office.
+
+## Step 7:
+The last thing we are going to do is get a view of the overall health of the network. 
+Once again, click link to take you back to the main dashboard for the Executive Report, and then click WAN Capacity. 
+Your view should look like this:
+
+![Lab 2](images/2.13.png)
+
+The view defaults to show you the last 24 hours, but to be even more specific, we will choose to see the last 8 hours. 
+It shows the average traffic utilization as well as the peak traffic utilization in this timeframe, to help us identify any congestion.
+
+## Step 8:
+Now look at Office Health.
+
+![Lab 2](images/2.14.png)
+
+Here you can see a high-level view of the number of events per office, giving you an idea of which regions are having more problems that the others. 
+It also shows top devices by response time, CPU, and connections, giving us an idea of how busy the devices are.
+
+Click in on one of the offices to see the widgets propagate the data specific to that location.
+
+![Lab 2](images/2.15.png)
+
+
+We now have seen a broad view of the capabilities of SevOne to show you your network health.
 
 
 
