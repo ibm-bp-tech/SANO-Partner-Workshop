@@ -3,7 +3,7 @@ import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import { calloutLink } from './Homepage.module.scss';
 
-import Carbon from './logo.png';
+import Carbon from './sevone_logo.png';
 
 const FirstLeftText = () => <p>IBM SevOne Workshop</p>;
 
@@ -27,7 +27,7 @@ const SecondRightText = () => (
   </p>
 );
 
-const BannerText = () => <h1>Instana Tutorial</h1>;
+const BannerText = () => <h1>SevOne Tutorial</h1>;
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
