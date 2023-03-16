@@ -3,14 +3,10 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 
 const links = [
   {
-    title: 'Instana Site',
-    href: 'https://www.ibm.com/cloud/instana',
+    title: 'IBM SevOne NPM Site',
+    href: 'https://www.ibm.com/cloud/sevone-network-performance-management',
   },
 
-  {
-    title: 'Instana Documentation',
-    href: 'https://www.ibm.com/docs/en/obi/current',
-  },
  {
     title: 'IBM AIOps Site',
     href: 'https://www.ibm.com/cloud/aiops',

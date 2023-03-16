@@ -1,55 +1,51 @@
 ---
 export const Title = () => (
   <span>
-    Lab 3 - Agent Configuration <br />
+    Lab 3 - WAN Health <br />
   </span>
 );
 ---
-In this lab we will configure:
+## Link to the Video: 
+https://ibm.box.com/s/9imargrlkkyw4d229sosovbeogna3gsi
 
-Custom Tabs – enable searching and filtering of tags in the UI
 
-Custom Zone – where hosts are grouped into zones on the infrastructure map
-
-![Lab 3](images/lab3.1.png)
+![Lab 3](images/3.1.png)
 
 ## Step 1:
 
-SSH into your host and navigate to the directory:
+![Lab 3](images/3.2.png)
 
-```
-/opt/instana/agent/etc/instana 
-```
+![Lab 3](images/3.3.png)
+
+![Lab 3](images/3.4.png)
 
 ## Step 2:
 
-Create a configuration-custom.yaml file. 
+![Lab 3](images/3.5.png)
 
-Copy the appropriate blocks from the configuration.yaml file to your new file.
+![Lab 3](images/3.6.png)
 
-```
-sudo cp configuration.yaml configuration-custom.yaml 
-```
+![Lab 3](images/3.7.png)
+
+![Lab 3](images/3.8.png)
+
+![Lab 3](images/3.9.png)
+
+![Lab 3](images/3.10.png)
 
 ## Step 3:
-Using the vi commands, look for the following sections within the configuration-custom.yaml file and make the following changes: 
 
-![Lab 3](images/3.2.png)
+![Lab 3](images/3.11.png)
 
-Note: 
+![Lab 3](images/3.12.png)
 
-Be wary of spacing. Yaml requires 2 space indentation. 
+![Lab 3](images/3.13.png)
 
-Also, check that the changes are uncommented in the yaml file.
+![Lab 3](images/3.14.png)
 
-Once these values have been modified, please save your work. 
+![Lab 3](images/3.15.png)
 
-## Step 4:
-
-Validate that your work was successful by viewing your host in the Instana UI. 
-Click on your host on the Infrastructure map and it will bring up details: 
-
-![Lab 3](images/lab3.3.png)
+![Lab 3](images/3.16.png)
 
 
 
