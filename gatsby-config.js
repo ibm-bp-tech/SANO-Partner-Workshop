@@ -29,6 +29,19 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-remark-video',
+      options: {
+        width: 200,
+        height: 400,
+        preload: 'auto',
+        muted: true,
+        autoplay: true,
+        playsinline: true,
+        controls: true,
+        loop: true
+      },
+    },
   ],
   pathPrefix: "/SevOne-1-Day-Partner-Workshop",
 };
