@@ -27,3 +27,8 @@
 - title: Instructor Setup Instructions
   pages:
     - path: /SetupInstructions/setup
+
+- title: Uncut Lab Videos
+  pages:
+    - title: Full Video - WAN Health
+      path: /LabVideos/WANHealth
