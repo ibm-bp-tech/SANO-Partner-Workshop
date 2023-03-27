@@ -5,52 +5,245 @@ export const Title = () => (
   </span>
 );
 ---
-## Link to the Video: 
-https://ibm.box.com/s/9imargrlkkyw4d229sosovbeogna3gsi
+## Lab Overview
+
+This lab will show how we can monitor the internet connections from a holistic
+approach, not only monitoring internet traffic, but getting visibility from every single aspect of
+the network that could impact the internet connections, from BGP connections to MPLS traffic,
+from QoS drops to bandwidth analysis
+
+## Setting the Stage
+
+Recently there have been some issues with MS Teams; however, in the past it has been very
+difficult to troubleshoot these problems. Now, the company deployed SevOne and we are
+trying to identify the root cause of the MS Teams issue. Reviewing every single KPI that can
+impact that application, we will find out why the issue occurred and how to fix it.
+
+Use Cases: 
+
+All the Data 
+
+•Maps – data simplification 
+
+•Object groups 
+
+•Routing protocols – Device certification 
+
+•Network quality 
+
+•Netflow – bandwidth analysis 
+
+•QoS – Device certification 
+
+•MPLS – Device certification 
 
 
+Backup Issue - Data Correlation 
 
-<video controls poster="images/sevone.png" style={{ width: `50%`, height: `50%`}}>
-  <source src="/videos/IBM SevOne NPM WAN Health Demo.MP4"/>
-</video>
+•Metric to flow 
 
-![Lab 3](images/3.1.png)
+•Workflow 
+
+
+MS Teams Issue - Root cause analysis 
+
+•High Frequency Polling 
+
+•Baseline 
+
 
 ## Step 1:
 
-![Lab 3](images/3.2.png)
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo02.mp4"/>
+</video>
 
-![Lab 3](images/3.3.png)
+![Lab 3](/images/WAN/pic10.png)
 
-![Lab 3](images/3.4.png)
+Go to Global Internet Health - Operational Report. Switch the timeframe to view the last 48 hours.
+
+•Internet monitoring is not only traffic monitoring and errors, it is more than that 
+
+•This reports shows everything that might be relevant to troubleshoot WAN issues 
+
+•Change location easily using Sites filter (object group) 
+
+•Easy visualization using Maps and chaining 
+
+(Dev note - add tab explanations to screenshots below)
+![Lab 3](images/WAN/pic10.png)
+
+![Lab 3](images/WAN/pic4.png)
+
+![Lab 3](images/WAN/pic5.png)
+
+![Lab 3](images/WAN/pic6.png)
+
+![Lab 3](images/WAN/pic7.png)
+
+![Lab 3](images/WAN/pic8.png)
+
+![Lab 3](images/WAN/pic9.png)
 
 ## Step 2:
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo03.mp4"/>
+</video>
 
-![Lab 3](images/3.5.png)
+Back to Main page and focus on Issue: 
+![Lab 3](images/WAN/pic16.png)
+Go back to snapshot and look at jittr 
 
-![Lab 3](images/3.6.png)
+Talking Points: 
 
-![Lab 3](images/3.7.png)
+•Some issues with IPSLA (link performance) have been identified 
 
-![Lab 3](images/3.8.png)
+•These issues might or might not be related to the MS teams problem 
 
-![Lab 3](images/3.9.png)
+•Time to start troubleshooting and correlate data 
 
-![Lab 3](images/3.10.png)
+## Step 3
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo04.mp4"/>
+</video>
 
-## Step 3:
+Go to Quality and Reachability section  
+![Lab 3](images/WAN/pic5.png)
+Talking Points: 
 
-![Lab 3](images/3.11.png)
+•There are some problems with MOS and Jitter at the same time 
 
-![Lab 3](images/3.12.png)
+•We can give indications of the meaning of the KPIs within the report (see Explanation widget) 
 
-![Lab 3](images/3.13.png)
+•The question is why is this happening? 
 
-![Lab 3](images/3.14.png)
+## Step 4
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo05.mp4"/>
+</video>
 
-![Lab 3](images/3.15.png)
+Go to Internet Connections
+![Lab 3](images/WAN/pic12.png)
+Talking Points: 
 
-![Lab 3](images/3.16.png)
+•There is a spike of traffic that looks like it is at the same time as the issues with performance 
+
+•We need to make sure these two issues are related 
+
+Click on HC Out Octets within the Traffic widget 
+
+Go to Instant Graph Workspace 
+![Lab 3](images/WAN/pic13.png)
+Choose 
+
+•Device: CHI-EDGE01 
+
+•Objects: GigabitEthernet1/1/0/0 and jitter -_-CHI_to_SFO-1-Index:111-Tos:0 
+
+•Indicators: Total HC Octets and MOS 
+![Lab 3](images/WAN/pic14.png)
+Talking Points: 
+
+•Very easy to see that both issues are correlated 
+
+•Because of the saturation of the link, the quality of the link drops 
+
+•But we still need to know why there is saturation 
+
+## Step 5
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo06.mp4"/>
+</video>
+
+Click + and select Flow 
+
+Change Flow view to Application Names 
+![Lab 3](images/WAN/pic15.png)
+Talking Points: 
+
+•The ability to link metric with flow data allows us to easily identify that the problem is the spike of SQL traffic 
+
+•Hence, we have identified one issue, but this does not look related to the original MS Teams issue that we were reviewing 
+
+Click on Global Internet Report – Operational Report breadcrumb to go back to the main report 
+
+Review QoS alert 
+![Lab 3](images/WAN/pic16.png)
+Talking Points: 
+
+•There is a problem with a priority QoS class having drops 
+
+•We are not generating alerts on every single class, only on those ones that are important/critical 
+
+•Let’s review the impact of this alert 
+
+## Step 6
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo07.mp4"/>
+</video>
+
+Go to QoS sections
+![Lab 3](images/WAN/pic17.png)
+Talking Points: 
+
+•There is a spike of priority class traffic that is generating some drops 
+
+•There are also some drops related to best effort traffic that are not relevant 
+
+•We need to identify what kind of traffic is generating that spike 
+
+Go to Internet Connections section. 
+![Lab 3](images/WAN/pic12.png)
+
+## Step 7
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo08.mp4"/>
+</video>
+
+Go to BW Analysis section.
+![Lab 3](images/WAN/pic18.png)
+Talking Points: 
+
+•At the time of the issue there is an application that generated more traffic than normal 
+
+•Let’s identify that application 
+
+Select MS Teams
+![Lab 3](images/WAN/pic19.png)
+Talking Points: 
+
+•There is a short term spike of MS Teams traffic that may have generated the issue as it may have reached the max BW assigned to the QoS class assigned 
+
+•However we need more detailed information, because microburst could be another reason why there are QoS drops 
+
+## Step 8
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo09.mp4"/>
+</video>
+
+Go to Internet Connections  
+
+Zoom in on the time of the spike (as much as possible) 
+![Lab 3](images/WAN/pic20.png)
+Talking Points: 
+
+•Using our high frequency polling we can detect short term bursts of traffic, giving us more detailed information that would be missed if we were monitoring every 5 minutes 
+
+Click on HC In Octets and choose Data Analytics
+![Lab 3](images/WAN/pic21.png)
+Talking Points: 
+
+•SevOne can tell us the normal behavior of any monitored metric 
+
+•Here we can see that the microburst is not normal, but the SQL traffic that we saw before actually happens every day 
+
+## Step 9
+<video controls style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo10.mp4"/>
+</video>
 
 
-
+## Full Video Here:
+<video controls poster="images/sevone.png" style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/IBM SevOne NPM WAN Health Demo.MP4"/>
+</video>
