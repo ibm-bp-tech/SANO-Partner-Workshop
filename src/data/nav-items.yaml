@@ -3,6 +3,8 @@
     - path: /SalesEnablement/sales
 - title: Technical Labs
   pages:
+    - title: SevOne Lab Environment
+      path: /Labs/env
     - title: Lab 1 - Network Performance Management
       path: /Labs/Lab1
     - title: Lab 2 - Executive Reporting
