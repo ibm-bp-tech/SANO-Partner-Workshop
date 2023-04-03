@@ -1,8 +1,13 @@
-- title: Introduction to SevOne
+- title: Agenda
+  pages:
+    - path: /agenda/agenda
+- title: Overview and Presentations
   pages:
     - path: /SalesEnablement/sales
 - title: Technical Labs
   pages:
+    - title: SevOne Lab Environment
+      path: /Labs/env
     - title: Lab 1 - Network Performance Management
       path: /Labs/Lab1
     - title: Lab 2 - Executive Reporting
@@ -24,11 +29,15 @@
     #- title: Reference - vi Editor
     #  path: /Labs/vi
 
+- title: Uncut Lab Videos
+  pages:
+    - title: Full Video - Network Performance Management
+      path: /LabVideos/NPM
+    - title: Full Video - Executive Reporting
+      path: /LabVideos/EXEC
+    - title: Full Video - WAN Health
+      path: /LabVideos/WANHealth
+
 - title: Instructor Setup Instructions
   pages:
     - path: /SetupInstructions/setup
-
-- title: Uncut Lab Videos
-  pages:
-    - title: Full Video - WAN Health
-      path: /LabVideos/WANHealth
