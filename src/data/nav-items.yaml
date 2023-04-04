@@ -37,6 +37,8 @@
       path: /LabVideos/EXEC
     - title: Full Video - WAN Health
       path: /LabVideos/WANHealth
+    - title: Full Video - Integration to CP4AIOps
+      path: /LabVideos/WATSON
 
 - title: Instructor Setup Instructions
   pages:

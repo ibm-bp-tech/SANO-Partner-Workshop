@@ -5,11 +5,6 @@ export const Title = () => (
   </span>
 );
 ---
-## Step 0:
-
-Make sure environment access is set up (check the SevOne Lab Environment Tab)
-* Full Demo Video Located in the Uncut Lab Videos Tab
-
 
 ## Lab Overview
 
@@ -41,6 +36,11 @@ impact that application, we will find out why the issue occurred and how to fix 
   * High Frequency Polling 
   * Baseline 
 
+## Step 0:
+
+Make sure environment access is set up (check the SevOne Lab Environment Tab)
+* Full Demo Video Located in the Uncut Lab Videos Tab
+
 ## Step 1:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -50,14 +50,11 @@ impact that application, we will find out why the issue occurred and how to fix 
 Go to Global Internet Health - Operational Report. Switch the timeframe to view the last 48 hours.
 
 Here we will see how we can monitor internet connections from a holistic point of view. 
-![Lab 3](/images/WAN/pic10.png)
-•Internet monitoring is not only traffic monitoring and errors, it is more than that 
-
-•This reports shows everything that might be relevant to troubleshoot WAN issues 
-
-•Change location easily using Sites filter (object group) 
-
-•Easy visualization using Maps and chaining 
+![Lab 3](/images/WAN/Step1a.png)
+* Internet monitoring is not only traffic monitoring and errors, it is more than that 
+* This reports shows everything that might be relevant to troubleshoot WAN issues 
+* Change location easily using Sites filter (object group) 
+* Easy visualization using Maps and chaining 
 
 
 ## Step 2:
@@ -66,17 +63,14 @@ Here we will see how we can monitor internet connections from a holistic point o
 </video>
 
 Go back to the main page and focus on Issue: 
-![Lab 3](images/WAN/pic16.png)
+![Lab 3](images/WAN/Step2a.png)
 The main page displays a consolidated list of issues that take place relating to the network health,
 categorized by warnings, errors, alerts, and critical tags.
 
-Talking Points: 
-
-•Some issues with IPSLA (link performance) have been identified 
-
-•These issues might or might not be related to the MS teams problem 
-
-•Time to start troubleshooting and correlate data 
+* Talking Points: 
+  * Some issues with IPSLA (link performance) have been identified 
+  * These issues might or might not be related to the MS teams problem 
+  * Time to start troubleshooting and correlate data 
 
 ## Step 3:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -84,15 +78,11 @@ Talking Points:
 </video>
 
 Go to Quality and Reachability section: 
-![Lab 3](images/WAN/pic5.png)
-
-Talking Points: 
-
-•There are some problems with MOS and Jitter at the same time 
-
-•We can give indications of the meaning of the KPIs within the report (see Explanation widget) 
-
-•The question is why is this happening? 
+![Lab 3](images/WAN/Step3a.png)
+* Talking Points: 
+  * There are some problems with MOS and Jitter at the same time 
+  * We can give indications of the meaning of the KPIs within the report (see Explanation widget) 
+  * The question is why is this happening? 
 
 ## Step 4:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -100,33 +90,24 @@ Talking Points:
 </video>
 
 Go to Internet Connections
-![Lab 3](images/WAN/pic12.png)
+![Lab 3](images/WAN/Step4a.png)
 The internet connections tab provides visibility into time-based correlations for potential issues, adding a layer of context to network analysis.
-Talking Points: 
+* Talking Points: 
+  * There is a spike of traffic that looks like it is at the same time as the issues with performance 
+  * We need to make sure these two issues are related 
 
-•There is a spike of traffic that looks like it is at the same time as the issues with performance 
+Click on HC Out Octets within the Traffic widget. Go to Instant Graph Workspace 
+![Lab 3](images/WAN/Step4b.png)
+* Choose
+  * Device: CHI-EDGE01 
+  * Objects: GigabitEthernet1/1/0/0 and jitter -_-CHI_to_SFO-1-Index:111-Tos:0 
+  * Indicators: Total HC Octets and MOS 
 
-•We need to make sure these two issues are related 
-
-Click on HC Out Octets within the Traffic widget 
-
-Go to Instant Graph Workspace 
-![Lab 3](images/WAN/pic13.png)
-Choose 
-
-•Device: CHI-EDGE01 
-
-•Objects: GigabitEthernet1/1/0/0 and jitter -_-CHI_to_SFO-1-Index:111-Tos:0 
-
-•Indicators: Total HC Octets and MOS 
-![Lab 3](images/WAN/pic14.png)
-Talking Points: 
-
-•Very easy to see that both issues are correlated 
-
-•Because of the saturation of the link, the quality of the link drops 
-
-•But we still need to know why there is saturation 
+![Lab 3](images/WAN/Step4c.png)
+* Talking Points: 
+  * Very easy to see that both issues are correlated 
+  * Because of the saturation of the link, the quality of the link drops 
+  * But we still need to know why there is saturation 
 
 ## Step 5:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -134,44 +115,41 @@ Talking Points:
 </video>
 
 Click + and select Flow 
+![Lab 3](images/WAN/Step5a.png)
+
+![Lab 3](images/WAN/Step5b.png)
 
 Change Flow view to Application Names 
-![Lab 3](images/WAN/pic15.png)
-Talking Points: 
-
-•The ability to link metric with flow data allows us to easily identify that the problem is the spike of SQL traffic 
-
-•Hence, we have identified one issue, but this does not look related to the original MS Teams issue that we were reviewing 
-
-Click on Global Internet Report – Operational Report breadcrumb to go back to the main report 
-
-Review QoS alert 
-![Lab 3](images/WAN/pic16.png)
-Talking Points: 
-
-•There is a problem with a priority QoS class having drops 
-
-•We are not generating alerts on every single class, only on those ones that are important/critical 
-
-•Let’s review the impact of this alert 
+![Lab 3](images/WAN/Step5c.png)
+* Talking Points: 
+  * The ability to link metric with flow data allows us to easily identify that the problem is the spike of SQL traffic 
+  * Hence, we have identified one issue, but this does not look related to the original MS Teams issue that we were reviewing 
 
 ## Step 6:
+
+Click on Global Internet Health – Operational Report breadcrumb to go back to the main report 
+![Lab 3](images/WAN/Step6a.png)
+
+Review QoS alert 
+![Lab 3](images/WAN/Step6b.png)
+* Talking Points: 
+  * There is a problem with a priority QoS class having drops 
+  * We are not generating alerts on every single class, only on those ones that are important/critical 
+  * Let’s review the impact of this alert 
+
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/WAN/WANVideo07.mp4"/>
 </video>
 
 Go to QoS sections
-![Lab 3](images/WAN/pic17.png)
-Talking Points: 
-
-•There is a spike of priority class traffic that is generating some drops 
-
-•There are also some drops related to best effort traffic that are not relevant 
-
-•We need to identify what kind of traffic is generating that spike 
+![Lab 3](images/WAN/Step6c.png)
+* Talking Points: 
+  * There is a spike of priority class traffic that is generating some drops 
+  * There are also some drops related to best effort traffic that are not relevant 
+  * We need to identify what kind of traffic is generating that spike 
 
 Go to Internet Connections section. 
-![Lab 3](images/WAN/pic12.png)
+![Lab 3](images/WAN/Step6d.png)
 
 ## Step 7:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -179,20 +157,16 @@ Go to Internet Connections section.
 </video>
 
 Go to BW Analysis section.
-![Lab 3](images/WAN/pic18.png)
-Talking Points: 
-
-•At the time of the issue there is an application that generated more traffic than normal 
-
-•Let’s identify that application 
+![Lab 3](images/WAN/Step7a.png)
+* Talking Points: 
+  * At the time of the issue there is an application that generated more traffic than normal 
+  * Let’s identify that application 
 
 Select MS Teams
-![Lab 3](images/WAN/pic19.png)
-Talking Points: 
-
-•There is a short term spike of MS Teams traffic that may have generated the issue as it may have reached the max BW assigned to the QoS class assigned 
-
-•However we need more detailed information, because microburst could be another reason why there are QoS drops 
+![Lab 3](images/WAN/Step7b.png)
+* Talking Points: 
+  * There is a short term spike of MS Teams traffic that may have generated the issue as it may have reached the max BW assigned to the QoS class assigned 
+  * However we need more detailed information, because microburst could be another reason why there are QoS drops 
 
 ## Step 8:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -200,25 +174,30 @@ Talking Points:
 </video>
 
 Go to Internet Connections  
-
+![Lab 3](images/WAN/Step8a.png)
 Zoom in on the time of the spike (as much as possible) 
-![Lab 3](images/WAN/pic20.png)
-Talking Points: 
+* Talking Points: 
+  * Using our high frequency polling we can detect short term bursts of traffic, giving us more detailed information that would be missed if we were monitoring every 5 minutes 
 
-•Using our high frequency polling we can detect short term bursts of traffic, giving us more detailed information that would be missed if we were monitoring every 5 minutes 
+Click on HC In Octets and choose Instant Graphics Workspace
+![Lab 3](images/WAN/Step8b.png)
 
-Click on HC In Octets and choose Data Analytics
-![Lab 3](images/WAN/pic21.png)
-Talking Points: 
+**** Need to talk about comparison of two sites and talk about microburst spike in service - and the fact we had this feature enabled.  If not enabled, we would never have seen this.
 
-•SevOne can tell us the normal behavior of any monitored metric 
-
-•Here we can see that the microburst is not normal, but the SQL traffic that we saw before actually happens every day 
+* Choose:
+  * Device: CHI-EDGE01 and SFO-EDGE01
+  * Objects: GigabitEthernet1/1/0/0 (CHI) and GigabitEthernet1/1/0/0 (SFO)
+  * Indicators: Total HC Octets (CHI) and Total HC Octets (SFO)
+![Lab 3](images/WAN/Step8d.png)
 
 ## Step 9:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/WAN/WANVideo10.mp4"/>
 </video>
 
+Click on HC In Octets and choose Data Analytics
+![Lab 3](images/WAN/Step9a.png)
 
-
+* SevOne can tell us the normal behavior of any monitored metric 
+* Here we can see that the microburst is not normal, but the SQL traffic that we saw before actually happens every day 
+![Lab 3](images/WAN/Step9b.png)
