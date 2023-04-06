@@ -1,14 +1,31 @@
 ---
 export const Title = () => (
   <span>
-    Lab 1 - Network Performance <br />
+    Lab 1 - NPM Intro <br />
   </span>
 );
 ---
 
+## Lab Overview
+
+This lab demonstrates how workflows works and how they can be used to go from a high level
+report to a more granular one, allowing us to troubleshoot problems in a much more efficient way.
+
+## Setting the Stage
+
+We have a look at the most severe alerts that are active, and we see a big drop of VPN connections
+on one of the firewalls. We try to correlate the drop of connections with other metrics, and we find out
+that there is a correlation between drop of connections and high CPU. Reviewing the top processes
+using CPU we identify that the SSL process that is the one having issues and using data analytics we
+realize this is not something normal (baseline). Finally reviewing the flows (using metric to flow) we
+identify a big surge of TCP SYN connections (potential DDoS attack) that is generating a high CPU
+load on the SSL process, that is impacting on the VPN connections. Hence, we have identified the
+root cause of the issue and the IP addresses generating the issue, therefore we can configure our
+firewall or IPS/IDS to block those connection attempts.
+
 ## Step 0:
 
-Make sure environment access is set up (check the SevOne Lab Environment Tab)
+Login to the SevOne lab environment as referenced in the SevOne Lab Environment Tab
 * Full Demo Video Located in the Uncut Lab Videos Tab
 
 **Video For Steps 1 and 2:**
@@ -164,4 +181,5 @@ We can now see a direct correlation between the spikes and drops on both graphs.
 
 So we have determined the cause of high cpu usage.
 
-
+## Summary/Additional Questions:
+Instructor-Led Discussion
