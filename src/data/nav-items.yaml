@@ -8,7 +8,7 @@
   pages:
     - title: SevOne Lab Environment
       path: /Labs/env
-    - title: Lab 1 - Network Performance Management
+    - title: Lab 1 - NPM Intro
       path: /Labs/Lab1
     - title: Lab 2 - Executive Reporting
       path: /Labs/Lab2
