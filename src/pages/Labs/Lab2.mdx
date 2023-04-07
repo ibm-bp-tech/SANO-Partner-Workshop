@@ -8,14 +8,17 @@ export const Title = () => (
 
 ## Lab Overview
 
-This lab will show how we can create executive/managerial reports in SevOne in a way that the audience can easily understand
-the status of the network and can control and maintain the SLAs.
+This lab will illustrate how SevOne can be used to provide executive dashboards that are easily 
+consumed and understood that shows the current status of the enterprise network along with all 
+the associated SLAs that are consisted critical to the business.
 
-For a background on this specific hypothetical situation, a network manager wants to review the current status of the network because there were some problems 
-yesterday with one of the internal services. The manager wants to make sure there is no problem now.
+So there were some network issues reported yesterday in one if the corporate internal production 
+systems. As the Network Manager starting his day, he wanted to access the tool himself to make 
+sure that the issue was resolved and there are no reoccurrences of the problem since it was 
+addressed and resolved.   
 
-On top of this, the network manager wants to review if there is any SLA being breached in any of their offices, just to make sure everything in the network is 
-running smoothly.
+Also, the Network Manager wants to validate that the network is healthy and review if there are 
+any SLAs being breached in any of their remoted corporate offices
 
 ## Setting the Stage
 
@@ -23,18 +26,37 @@ running smoothly.
   <source src="/videos/ExecRep/ExecReport1.mp4"/>
 </video>
 
+**Use Cases:**
+* Service Status
+  * Maps
+  * Object grouping
+  * Calculation Poller / Group Poller
+  * Chaining
+  * Workflow
+* WAN Status
+  * Maps
+  * Calculation Poller
+  * Workflow
+  * Capacity Planning
+* Overall Health
+  * Maps
+  * Chaining
+
 ## Step 0:
 
 Login to the SevOne lab environment as referenced in the SevOne Lab Environment Tab
-* Full Demo Video Located in the Uncut Lab Videos Tab
 
-## Step 1:
+Full Demo Video Located in the Uncut Lab Videos Tab
+
+## Use Case 1: Service Status
+
+### Step 1.1:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport2.mp4"/>
 </video>
 
-From the SevOne homepage, open the Executive Report file using the search bar.
+From the SevOne homepage, open the Executive Report using the search bar.
 
 ![Lab 2](images/2.1.png)
 
@@ -45,7 +67,7 @@ Upon entering the file, your screen should look like this:
 This is a dashboard to show you a big picture view of your service status. 
 On the top two panels, you can see the health of your services, and on the bottom two, you can see the availability of the services.
 
-## Step 2:
+### Step 1.2:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport3.mp4"/>
@@ -62,7 +84,7 @@ The availability goes down at night, which is normal, but during the day it is a
 
 ![Lab 2](images/2.4.png)
 
-## Step 3:
+### Step 1.3:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport4.mp4"/>
@@ -82,7 +104,9 @@ We are going to jump to the Traffic page.
 
 The points of high traffic utilization might explain why there was poor health during the day on this service.
 
-## Step 4:
+## Use Case 2: WAN Status
+
+### Step 2.1:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport5.mp4"/>
@@ -105,7 +129,7 @@ The red blocks show problems in the past at the Chicago office.
 
 ![Lab 2](images/2.8.png)
 
-## Step 5:
+### Step 2.2:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport6.mp4"/>
@@ -122,7 +146,7 @@ Once you do that, you view should look like this:
 Here you get a side-by-side view of the problems in the CHI office on the left, and then the reasons for those problems on the right.
 NOTE: depending on the time of the day, the applications generating spikes might be different.
 
-## Step 6:
+### Step 2.3:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport7.mp4"/>
@@ -141,7 +165,9 @@ To drill down even further, click on events. Your view should look like this:
 
 Here we can review the actual events that have happened on the WAN network of that office.
 
-## Step 7:
+## Use Case 3: Overall Health
+
+### Step 3.1:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport8.mp4"/>
@@ -156,7 +182,7 @@ Your view should look like this:
 The view defaults to show you the last 24 hours, but to be even more specific, we will choose to see the last 8 hours. 
 It shows the average traffic utilization as well as the peak traffic utilization in this timeframe, to help us identify any congestion.
 
-## Step 8:
+### Step 3.2:
 
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/ExecRep/ExecReport9.mp4"/>
