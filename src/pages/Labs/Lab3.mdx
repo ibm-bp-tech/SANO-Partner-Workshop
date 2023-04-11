@@ -102,8 +102,8 @@ The internet connections tab provides visibility into time-based correlations fo
 Click on HC Out Octets within the Traffic widget. Go to Instant Graph Workspace 
 ![Lab 3](images/WAN/Step4b.png)
 * Choose
-  * Device: CHI-EDGE01 
-  * Objects: GigabitEthernet1/1/0/0 and jitter -_-CHI_to_SFO-1-Index:111-Tos:0 
+  * Device: CHI-EDGE01 (Already selected)
+  * Objects: Objects: GigabitEthernet1/1/0/0 (Already selected), and jitter -_-CHI_to_SFO-1-Index:111-Tos:0 (Hint: start typing in “SFO” to find)
   * Indicators: Total HC Octets and MOS 
 
 ![Lab 3](images/WAN/Step4c.png)
@@ -117,7 +117,7 @@ Click on HC Out Octets within the Traffic widget. Go to Instant Graph Workspace
   <source src="/videos/WAN/WANVideo06.mp4"/>
 </video>
 
-Click + and select Flow 
+Click + (in the Performance Metrics window) and select Flow 
 ![Lab 3](images/WAN/Step5a.png)
 
 ![Lab 3](images/WAN/Step5b.png)
@@ -133,6 +133,10 @@ Change Flow view to Application Names
 Click on Global Internet Health – Operational Report breadcrumb to go back to the main report 
 ![Lab 3](images/WAN/Step6a.png)
 
+<video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
+  <source src="/videos/WAN/WANVideo07.mp4"/>
+</video>
+
 Review QoS alert 
 ![Lab 3](images/WAN/Step6b.png)
 * Talking Points: 
@@ -140,19 +144,16 @@ Review QoS alert
   * We are not generating alerts on every single class, only on those ones that are important/critical 
   * Let’s review the impact of this alert 
 
-<video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
-  <source src="/videos/WAN/WANVideo07.mp4"/>
-</video>
 
 Go to QoS sections
 ![Lab 3](images/WAN/Step6c.png)
+
+Go to Internet Connections section. 
+![Lab 3](images/WAN/Step6d.png)
 * Talking Points: 
   * There is a spike of priority class traffic that is generating some drops 
   * There are also some drops related to best effort traffic that are not relevant 
   * We need to identify what kind of traffic is generating that spike 
-
-Go to Internet Connections section. 
-![Lab 3](images/WAN/Step6d.png)
 
 ## Step 7:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
@@ -184,21 +185,21 @@ Zoom in on the time of the spike (as much as possible)
 
 Click on HC In Octets and choose Instant Graphics Workspace
 ![Lab 3](images/WAN/Step8b.png)
-
-**** Need to talk about comparison of two sites and talk about microburst spike in service - and the fact we had this feature enabled.  If not enabled, we would never have seen this.
+* Talking Points:
+  * We are able to compare the microburst of these two sites and see that CHI and SFO are not seeing the same results
+  * We can see this level of granularity to help us identify this problem in only a few minutes.
 
 * Choose:
-  * Device: CHI-EDGE01 and SFO-EDGE01
-  * Objects: GigabitEthernet1/1/0/0 (CHI) and GigabitEthernet1/1/0/0 (SFO)
-  * Indicators: Total HC Octets (CHI) and Total HC Octets (SFO)
-![Lab 3](images/WAN/Step8d.png)
+  * Device: CHI-EDGE01 and SFO-EDGE01 (hint: start typing SFO-ED)
+  * Objects: GigabitEthernet1/1/0/0 (CHI) and GigabitEthernet1/1/0/0 (SFO) (hint: start typing 1/1/0/0)
+  * Indicators: Total HC Octets (CHI) and Total HC Octets (SFO) (Hint: start typing Total HC)
 
 ## Step 9:
 <video controls poster="/images/VideoCover.png" style={{ width: `50%`, height: `50%`}}>
   <source src="/videos/WAN/WANVideo10.mp4"/>
 </video>
 
-Click on HC In Octets and choose Data Analytics
+Click on HC In Octets (for CHI-EDGE01) and choose Data Analytics
 ![Lab 3](images/WAN/Step9a.png)
 
 * SevOne can tell us the normal behavior of any monitored metric 
