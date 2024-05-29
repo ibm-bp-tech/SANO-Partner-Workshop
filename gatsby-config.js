@@ -24,7 +24,7 @@ module.exports = {
         mediumAccount: 'carbondesign',
         repository: {
           baseUrl:
-			'https://github.com/ibm-bp-tech/SevOne-1-Day-Partner-Workshop',
+			'https://github.com/ibm-bp-tech/SANO-Partner-Workshop',
           subDirectory: '/',
         },
       },
@@ -43,5 +43,5 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/SevOne-1-Day-Partner-Workshop",
+  pathPrefix: "/SANO-Partner-Workshop",
 };
