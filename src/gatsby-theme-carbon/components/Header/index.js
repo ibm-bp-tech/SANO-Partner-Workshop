@@ -3,7 +3,7 @@ import Header from 'gatsby-theme-carbon/src/components/Header';
 
 const CustomHeader = (props) => (
   <Header {...props}>
-    &nbsp;<span>SevOne Partner 1-Day Workshop</span>
+    &nbsp;<span>SANO Partner Workshop</span>
   </Header>
 );
 
