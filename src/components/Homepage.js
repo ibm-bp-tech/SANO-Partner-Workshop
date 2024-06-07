@@ -3,13 +3,13 @@ import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import { calloutLink } from './Homepage.module.scss';
 
-import Carbon from './sevone_logo.png';
+import Carbon from './sano_logo.png';
 
-const FirstLeftText = () => <p>IBM SevOne Workshop</p>;
+const FirstLeftText = () => <p>IBM SANO Workshop</p>;
 
 const FirstRightText = () => (
   <p>
-    Learn about IBM's SevOne. This site contains example labs, tutorials, and partner instructions.
+    Learn about IBM's SevOne Automated Network Observability (SANO). This site contains example labs, tutorials, and partner instructions.
   </p>
 );
 
