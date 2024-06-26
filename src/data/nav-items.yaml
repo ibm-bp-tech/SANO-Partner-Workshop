@@ -8,14 +8,16 @@
   pages:
     - title: SevOne Lab Environment
       path: /Labs/env
-    - title: Lab 1 - NPM Intro
+    - title: SevOne Lab 1 - NPM Intro
       path: /Labs/Lab1
-    - title: Lab 2 - Executive Reporting
+    - title: SevOne Lab 2 - Executive Reporting
       path: /Labs/Lab2
-    - title: Lab 3 - WAN Health
+    - title: SevOne Lab 3 - WAN Health
       path: /Labs/Lab3
-    - title: Lab 4 - Integration to CP4AIOps
+    - title: SevOne Lab 4 - Integration to CP4AIOps
       path: /Labs/Lab4
+    - title: RNA Lab 1 - Primer and Intro
+      path: /Labs/RNALab1
     #- title: Lab 5 - Dynamic Focus Query
     #  path: /Labs/Lab5
     #- title: Lab 6 - Application Perspectives
