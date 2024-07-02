@@ -10,11 +10,11 @@
       path: /Labs/env
     - title: SevOne Lab 1 - NPM Intro
       path: /Labs/Lab1
-    - title: SevOne Lab 2 - Executive Reporting
+      - title: SevOne Lab 2 - WAN Health
       path: /Labs/Lab2
-    - title: SevOne Lab 3 - WAN Health
+    - title: Optional Lab 3 - Executive Reporting
       path: /Labs/Lab3
-    - title: SevOne Lab 4 - Integration to CP4AIOps
+    - title: Optional Lab 4 - Integration to CP4AIOps
       path: /Labs/Lab4
     #- title: Lab 5 - Dynamic Focus Query
     #  path: /Labs/Lab5
@@ -46,8 +46,12 @@
       path: /Labs/RNALab1
     - title: RNA Lab 2 - Logic
       path: /Labs/RNALab2
+    - title: Logic Lab - Bonus
+      path: /Labs/RNALabB1
     - title: RNA Lab 3 - Metadata
       path: /Labs/RNALab3
+    - title: Metadata Lab - Bonus
+      path: /Labs/RNALabB2
 
 - title: Instructor Setup Instructions
   pages:

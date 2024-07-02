@@ -6,7 +6,11 @@ const links = [
     title: 'IBM SevOne NPM Site',
     href: 'https://www.ibm.com/cloud/sevone-network-performance-management',
   },
-
+  {
+    title: 'IBM RNA Site',
+    href: 'https://www.ibm.com/products/rapid-network-automation',
+  },
+  
  {
     title: 'IBM AIOps Site',
     href: 'https://www.ibm.com/cloud/aiops',
