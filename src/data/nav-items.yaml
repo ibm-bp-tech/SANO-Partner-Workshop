@@ -4,7 +4,7 @@
 - title: Overview and Presentations
   pages:
     - path: /SalesEnablement/sales
-- title: Technical Labs
+- title: SevOne Labs
   pages:
     - title: SevOne Lab Environment
       path: /Labs/env
@@ -16,8 +16,6 @@
       path: /Labs/Lab3
     - title: SevOne Lab 4 - Integration to CP4AIOps
       path: /Labs/Lab4
-    - title: RNA Lab 1 - Primer and Intro
-      path: /Labs/RNALab1
     #- title: Lab 5 - Dynamic Focus Query
     #  path: /Labs/Lab5
     #- title: Lab 6 - Application Perspectives
@@ -31,7 +29,7 @@
     #- title: Reference - vi Editor
     #  path: /Labs/vi
 
-- title: Uncut Lab Videos
+- title: SevOne Uncut Lab Videos
   pages:
     - title: Full Video - Network Performance Management
       path: /LabVideos/NPM
@@ -41,6 +39,15 @@
       path: /LabVideos/WANHealth
     - title: Full Video - Integration to CP4AIOps
       path: /LabVideos/WATSON
+
+- title: RNA Labs
+  pages:
+    - title: RNA Lab 1 - Primer and Intro
+      path: /Labs/RNALab1
+    - title: RNA Lab 2 - Logic
+      path: /Labs/RNALab2
+    - title: RNA Lab 3 - Metadata
+      path: /Labs/RNALab3
 
 - title: Instructor Setup Instructions
   pages:

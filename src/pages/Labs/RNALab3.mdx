@@ -1,0 +1,77 @@
+---
+title: RNALab3
+---
+export const Title = () => (
+  <span>
+    RNA Lab 3 - Metadata Lab <br />
+  </span>
+);
+;
+
+## Step 1: *Skip if already done in previous labs*
+First we need to create authentication to connect to NMS. Begin by clicking on “Create Authentication” once you login to the dashboard.
+![RNALab 2](images/RNA/2-1.png)
+
+In the top right corner, press the purple rectangle labeled “Create Authentication”.
+
+- Name: NMS_connect
+- Description: *leave blank*
+- Service: SevOne
+- Protocol: https://
+- Host: 10.0.0.10
+- Username: admin
+- Password: SevOne
+- API key: *leave blank*
+
+![RNALab 3](images/RNA/2-2.png)
+
+Click "create"
+
+## Step 2:
+Download from the community “Self-Service Data ingestion” zip file. If it’s not downloading as a zip file, be sure to try another browser such as Chrome. 
+
+Import the workflow (original .zip file, no need to uncompress it).
+![RNALab 3](images/RNA/3-1.png)
+
+The workflow should be listed as “SevOne Ingest Data - APIv3”.
+
+## Step 3:
+
+Create a new workflow like we did previously (click “Create Workflow”) and name it “Lab3”. 
+
+- Navigate to [ Home > User > “SevOne Ingest Data - APIv3” ] and drop it under the Assign_1 block
+- Rename this block from “User_1” to “toSevOne”
+- Change the content to be $Body (the variable will be created later)
+- Update the NMSCredentials with the authentication we previously created (NMS_connect)
+
+![RNALab 3](images/RNA/3-2.png)
+
+## Step 4:
+Assign a variable to be inserted into SevOne.
+
+- From Flat Layout. Create a new variable “Body”, Object, and empty {}
+![RNALab 3](images/RNA/3-5.png)
+
+Modify the module “Assign_1”​
+
+- Variable: $Body   ​
+- Value:
+![RNALab 3](images/RNA/3-6.png)
+
+*This is just sample data. This example adds a new device "Sacramento02" and an object "Speedtest"*
+
+## Step 5:
+Add a completion message once the workflow is completed [ Home > Common > Assign ] and drag it under the toSevOne block (Assign_2).
+
+- Variable: $result
+- Value: “Insert to SevOne completed!”
+![RNALab 3](images/RNA/3-7.png)
+
+## Step 6:
+Before running and executing the workflow result, click the power button on the bottom left corner of the toSevOne node. Then hit save and run.
+![RNALab 3](images/RNA/3-3.png)
+
+This should be your result:
+![RNALab 3](images/RNA/3-4.png)
+
+
