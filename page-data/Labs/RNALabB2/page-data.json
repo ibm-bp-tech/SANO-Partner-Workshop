@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-labs-rna-lab-b-2-mdx",
+    "path": "/Labs/RNALabB2/",
+    "result": {"pageContext":{"frontmatter":{"title":"RNALabB2"},"relativePagePath":"/Labs/RNALabB2.mdx","titleType":"page","MdxNode":{"id":"748afcbe-fc26-59ec-9f96-a606793d3531","children":[],"parent":"f10fbcd7-eeda-5c0d-b652-3a1dcefeca4b","internal":{"content":"---\ntitle: RNALabB2\n---\nexport const Title = () => (\n  <span>\n    Metadata Lab - Bonus <br />\n  </span>\n);\n;\n\n## Step 1: ","type":"Mdx","contentDigest":"6dd8004639538dbc7e68975a6980c440","owner":"gatsby-plugin-mdx","counter":513},"frontmatter":{"title":"RNALabB2"},"exports":{},"rawBody":"---\ntitle: RNALabB2\n---\nexport const Title = () => (\n  <span>\n    Metadata Lab - Bonus <br />\n  </span>\n);\n;\n\n## Step 1: ","fileAbsolutePath":"/Users/dugslade/Documents/GitHub/SANO-Partner-Workshop/src/pages/Labs/RNALabB2.mdx"}}},
+    "staticQueryHashes": ["1364590287","137577622","2102389209","2456312558","2746626797","3018647132","3037994772","768070550"]}
