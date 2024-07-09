@@ -1,0 +1,528 @@
+    1  cd ..
+    2  cd ..
+    3  pwd
+    4  cd usr/
+    5  ls
+    6  cd ..
+    7  pwd
+    8  ls
+    9  cd /Users
+   10  ls
+   11  cd dugslade
+   12  ls
+   13  cd Downloads
+   14  ls
+   15  ls
+   16  spleeter separate -p spleeter:2stems -o output WhatChildIsThis.mp3
+   17  spleeter -h
+   18  pwd
+   19  cd Downloads
+   20  ls
+   21  exit
+   22  xcode-select --install
+   23  brew -v
+   24  bash
+   25  exit
+   26  xcode
+   27  xcode-select --install
+   28  brew -v
+   29  brew -version
+   30  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   31  brew install node
+   32  exit
+   33  brew -v
+   34  bash
+   35  exit
+   36  brew install node
+   37  bash
+   38  brew -v
+   39  pwd
+   40  ls
+   41  ls *.*
+   42  ls *
+   43  pwd
+   44  touch ~/.zshrc
+   45  nano ~/.zshrc
+   46  exit
+   47  brew -v
+   48  brew -v
+   49  exit
+   50  source ~/.zshrc
+   51  brew -v
+   52  brew install node
+   53  npm install -g gatsby-cli
+   54  gatsby --version
+   55  npx gatsby new my-carbon-site https://github.com/carbon-design-system/gatsby-starter-carbon-theme
+   56  cd my-carbon-site
+   57  npm run dev
+   58  cd ..
+   59  ls
+   60  cd Documents
+   61  ls
+   62  cd GitHub
+   63  ls
+   64  ls
+   65  cd Instana-1-Day-Partner-Workshop
+   66  npm install gh-pages
+   67  npm run dev
+   68  npm install
+   69  npm run dev
+   70  sudo ubuntu@52.117.32.11
+   71  ssh ubuntu@52.117.32.11
+   72  ssh ubuntu@52.117.32.11
+   73  ssh ubuntu@52.117.32.11
+   74  ssh ubuntu@52.116.39.202
+   75  ssh ubuntu@52.116.39.202
+   76  ssh ubuntu@52.116.39.202
+   77  ssh ubuntu@52.116.39.219
+   78  ssh ubuntu@52.116.39.219
+   79  ssh ubuntu@52.116.39.219
+   80  node -v
+   81  ssh ubuntu@52.117.32.7
+   82  ssh ubuntu@52.117.32.7
+   83  ssh ubuntu@52.117.32.7
+   84  ssh ubuntu@52.116.39.214
+   85  ssh ubuntu@52.116.39.214
+   86  ssh ubuntu@52.116.39.214
+   87  ssh ubuntu@52.116.39.228
+   88  ssh ubuntu@52.116.39.228
+   89  ssh ubuntu@52.116.39.228
+   90  ssh ubuntu@67.228.209.42
+   91  ssh ubuntu@67.228.209.42
+   92  ssh ubuntu@67.228.209.42
+   93  ssh ubuntu@52.116.39.239
+   94  ssh ubuntu@52.116.39.239
+   95  ssh ubuntu@52.116.39.239
+   96  ssh ubuntu@52.116.39.252
+   97  ssh ubuntu@52.116.39.252
+   98  ssh ubuntu@52.116.39.252
+   99  ssh ubuntu@52.116.39.217
+  100  ssh ubuntu@52.116.39.217
+  101  ssh ubuntu@52.116.39.217
+  102  ssh ubuntu@52.117.32.14
+  103  ssh ubuntu@52.117.32.14
+  104  ssh ubuntu@52.117.32.14
+  105  ssh ubuntu@52.117.32.14
+  106  ssh ubuntu@52.117.32.8
+  107  ssh ubuntu@52.117.32.8
+  108  ssh ubuntu@52.117.32.8
+  109  ssh ubuntu@52.117.32.9
+  110  ssh ubuntu@52.117.32.9
+  111  ssh ubuntu@52.117.32.9
+  112  ssh ubuntu@52.117.32.4
+  113  ssh ubuntu@52.117.32.4
+  114  ssh ubuntu@52.117.32.4
+  115  ssh ubuntu@52.116.39.218
+  116  ssh ubuntu@52.116.39.218
+  117  ssh ubuntu@52.116.39.218
+  118  ssh root@52.117.32.9
+  119  ssh ubuntu@52.117.32.9
+  120  ls
+  121  cd Documents
+  122  ls
+  123  cd GitHub
+  124  ls
+  125  ls
+  126  ls
+  127  exit
+  128  ssh ubuntu@52.117.32.10
+  129  exit
+  130  ssh ubuntu@52.117.32.10
+  131  exit
+  132  ssh ubuntu@52.117.32.6
+  133  exit
+  134  ssh ubuntu@52.117.32.12
+  135  exit
+  136  ssh ubuntu@52.117.32.10
+  137  exit
+  138  ssh ubuntu@52.117.32.12
+  139  exit
+  140  ssh ubuntu@52.117.32.6
+  141  exit
+  142  pwd
+  143  cd Documents
+  144  cd GitHub
+  145  cd Turbo-2-Day-Adv-Partner-Workshop
+  146  ls
+  147  npm install gh-pages
+  148  npm install -g npm@9.3.0
+  149  npm install gh-pages
+  150  cd ..
+  151  cd Turbo-1-Day-Partner-Workshop
+  152  npm install gh-pages
+  153  cd ..
+  154  ls
+  155  cd Instana-1-Day-Partner-Workshop
+  156  npm install gh-pages
+  157  cd ..
+  158  cd Turbo-1-Day-Partner-Workshop
+  159  ls
+  160  npm install gh-pages
+  161  cd ..
+  162  cd Instana-2-Day-Adv-Partner-Workshop
+  163  npm install gh-pages
+  164  npm run deploy
+  165  npm run deploy
+  166  git remote add origin https://github.com/ibm-bp-tech/Instana-2-Day-Adv-Partner-Workshop.git
+  167  git remote add origin https://github.com/ibm-bp-tech/Instana-2-Day-Adv-Partner-Workshop.git
+  168  npm run deploy
+  169  git remote add origin https://github.com/ibm-bp-tech/Instana-2-Day-Adv-Partner-Workshop.git
+  170  git push -u origin main
+  171  npm run deploy
+  172  git remote remove origin
+  173  git branch -M main
+  174  git push -u origin main
+  175  npm run deploy
+  176  npm install gh-pages
+  177  npm run deploy 
+  178  npm run deploy 
+  179  git remote add origin https://github.com/ibm-bp-tech/Instana-2-Day-Adv-Partner-Workshop.git
+  180  npm run deploy 
+  181  npm run deploy 
+  182  npm run deploy 
+  183  npm install gh-pages
+  184  npm run deploy 
+  185  npm run deploy 
+  186  npm run deploy 
+  187  git branch -M main
+  188  git push -u origin main
+  189  jobs
+  190  git branch -M main
+  191  jobs -l
+  192  kill 1854
+  193  jobs -l
+  194  npm install gh-pages
+  195  npm run deploy 
+  196  git branch -M main
+  197  npm run deploy 
+  198  git push -u origin main
+  199  jobs
+  200  jobs -l
+  201  git config -l 
+  202  git add .
+  203  git commit -m "DOug Updates 2"
+  204  git push -u origin main
+  205  cd ..
+  206  cd Turbo-2-Day-Adv-Partner-Workshop
+  207  npm install gh-pages
+  208  node -v
+  209  node-gyp -v
+  210  npm rebuild node-sass
+  211  npm install gh-pages
+  212  pwd
+  213  pwd
+  214  ls
+  215  pwd
+  216  ls 
+  217  cd Documents
+  218  ls
+  219  cd GitHub
+  220  ls
+  221  cd Turbo-1-Day-Partner-Workshop
+  222  ls
+  223  gatsby -v
+  224  gatsby -clean
+  225  gatsby clean
+  226  npm install
+  227  npm install gh-pages
+  228  gatsby clean
+  229  cd ..
+  230  cd Instana-1-Day-Partner-Workshop
+  231  npm run dev
+  232  git add .
+  233  git commit -m "Added new images and index"
+  234  git push -u origin main
+  235  npm run deploy
+  236  npm run deploy
+  237  git config -l
+  238  npm run deploy
+  239  npm run deploy
+  240  npm run deploy
+  241  npm run deploy
+  242  npm run deploy
+  243  npm run deploy
+  244  npm run deploy
+  245  npm run deploy
+  246  npm run deploy
+  247  ls 
+  248  cd Documents
+  249  cd GitHub
+  250  ls
+  251  cd Instana-HalfDay-Partner-Workshop
+  252  cd ..
+  253  ls
+  254  mkdir Instana-HalfDay-Partner-Workshop
+  255  cd Instana-HalfDay-Partner-Workshop
+  256  git clone https://github.com/ibm-bp-tech/Instana-HalfDay-Partner-Workshop.git
+  257  cd ..
+  258  cd
+  259  cd Docd Documents
+  260  cd Documents
+  261  cd GitHub
+  262  ls
+  263  git clone https://github.com/ibm-bp-tech/Instana-HalfDay-Partner-Workshop.git
+  264  ls
+  265  git clone https://github.com/ibm-bp-tech/Turbo-1-Day-Partner-Workshop.git
+  266  cd Turbo-1-Day-Partner-Workshop
+  267  ls
+  268  npm run dev
+  269  gatsby clean
+  270  gatsby clean
+  271  npm install
+  272  gatsby clean
+  273  npm run dev
+  274  npm run dev
+  275  gatsby clean
+  276  npm install
+  277  npm run dev
+  278  ssh ubuntu@169.62.181.28
+  279  ssh ubuntu@169.62.181.28
+  280  cd
+  281  pwd
+  282  ls
+  283  cls
+  284  pwd
+  285  ssh ubuntu@169.62.181.28
+  286  pwd
+  287  ls
+  288  cd /opt/instana/agent/etc/instana 
+  289  ssh ubuntu@169.62.181.28
+  290  exit
+  291  npm run dev
+  292  npm run dev
+  293  npm run dev
+  294  npm run dev
+  295  npm run dev
+  296  npm run dev
+  297  npm run dev
+  298  npm run dev
+  299  npm run dev
+  300  npm run dev
+  301  nslookup D50PT006/50/PT/IBM
+  302  nslookup D50PT006
+  303  ping D50PT006
+  304  ping D50PT006.notes.ibm.com
+  305  pwd
+  306  ls
+  307  cd Documents
+  308  cd GitHub
+  309  cd Instana-1-Day-Partner-Workshop
+  310  npm run dev
+  311  npm run build
+  312  npm run dev
+  313  npm run dev
+  314  npm run dev
+  315  npm run dev
+  316  npm run build
+  317  npm run build
+  318  npm run dev
+  319  npm run build
+  320  npm run deploy
+  321  npm run dev
+  322  npm run dev
+  323  npm run dev
+  324  npm run dev
+  325  npm run deploy
+  326  npm run dev
+  327  npm run deploy
+  328  npm run deploy
+  329  npm run deploy
+  330  npm run deploy
+  331  npm run deploy
+  332  npm run deploy
+  333  npm run deploy
+  334  npm run deploy
+  335  npm run deploy
+  336  npm run deploy
+  337  npm run deploy
+  338  npm run deploy
+  339  npm run deploy
+  340  exit
+  341  ssh root@169.62.181.6
+  342  ssh root@169.62.181.4
+  343  exit
+  344  exit
+  345  exit
+  346  ssh ubuntu@52.116.39.222@
+  347  ssh ubuntu@52.116.39.222
+  348  exit
+  349  ssh ubuntu@52.116.39.222
+  350  cd /opt/instana/agent/etc
+  351  pwd
+  352  ls
+  353  cd /opt/instana/agent/etc
+  354  cd /opt/instana/agent/etc
+  355  cd opt
+  356  cd /opt
+  357  cd instana
+  358  ls
+  359  pwd
+  360  exit
+  361  ssh ubuntu@52.116.39.222
+  362  exit
+  363  brew install python3
+  364  pwd
+  365  ls
+  366  cd Downloads
+  367  cd Instan
+  368  cd Instana
+  369  cd VM-Script
+  370  ls
+  371  cd ssh_script
+  372  ls
+  373  ls
+  374  perl
+  375  perl -v
+  376  ls
+  377  ./run
+  378  ls
+  379  ls -alt
+  380  python -v
+  381  python3 -v
+  382  python3 run.py
+  383  pip install paramiko
+  384  python3 -m pip --version
+  385  python3 get-pip.py
+  386  python3 -m ensurepip 
+  387  pwd
+  388  cd
+  389  ls
+  390  cd Documents
+  391  ls
+  392  pythin -v
+  393  python -v
+  394  python3 -v
+  395  jobs
+  396  Kill %1
+  397  jobs
+  398  top
+  399  jobs stop %1
+  400  fg %1
+  401  jobs
+  402  fg %3
+  403  jobs
+  404  fg %3
+  405  jobs
+  406  fg %2
+  407  jobs
+  408  brew unlink python && brew link python
+  409  pip –version
+  410  python3 -m pip –version
+  411  exit
+  412  ssh ubuntu@169.62.165.75
+  413  exit
+  414  python3 -m pip –version
+  415  pip -version
+  416  python3 -m pip install –upgrade pip
+  417  pip3 install --upgrade pip
+  418  pip -version
+  419  pip --version
+  420  pip install paramiko
+  421  pip3 install pandas
+  422  pip install openpyxl
+  423  exit
+  424  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  425  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  426  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  427  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  428  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  429  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  430  exit
+  431  exit
+  432  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  433  ssh -p 30428 watsonx@useast.techzone-services.com
+  434  exit
+  435  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  436  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  437  ssh root@52.116.39.228
+  438  ssh root@52.116.39.228
+  439  exit
+  440  ssh root@169.62.181.2
+  441  ssh root@169.62.181.2
+  442  exit
+  443  pwd
+  444  ls
+  445  ls -alt
+  446  ssh root@169.62.181.20
+  447  ssh ubuntu@169.62.181.20
+  448  ssh ubuntu@169.62.181.20
+  449  exit
+  450  exit
+  451  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  452  ssh itzuser@52.116.134.139
+  453  ssh itzuser@52.116.134.139:2223
+  454  ssh -p 2223 -i key.file1 itzuser@52.116.134.139
+  455  pwd
+  456  touch key.file1
+  457  ssh -p 2223 -i key.file1 itzuser@52.116.134.139
+  458  chmod 600 key.file1
+  459  ssh -p 2223 -i key.file1 itzuser@52.116.134.139
+  460  ls -alt
+  461  ls -alt ke*
+  462  ssh -p 2223 -i key.file1 itzuser@52.116.134.139
+  463  ssh -p 2223 -i dougs-keyfile-forhistest-vm1_rsa.prv itzuser@52.116.134.139
+  464  chmod 600 dougs-keyfile-forhistest-vm1_rsa.prv
+  465  ssh -p 2223 -i dougs-keyfile-forhistest-vm1_rsa.prv itzuser@52.116.134.139
+  466  exit
+  467  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  468  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  469  /usr/local/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  470  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  471  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  472  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  473  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  474  apt-get install -y python3-paramiko
+  475  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  476  apt-get install -y python3-paramiko
+  477  pip install paramiko
+  478  pip install --upgrade pip
+  479  pip install paramiko
+  480  python -m pip install --upgrade pip
+  481  exit
+  482  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  483  pip install paramiko
+  484  python -m pip install --upgrade pip
+  485  /opt/homebrew/bin/python3 /Users/dugslade/Downloads/Instana/VM-Script/ssh_script/run.py
+  486  pwd
+  487  cd Downloads
+  488  ls
+  489  cd .. 
+  490  cd Documents
+  491  cd GitHub
+  492  cd SANO-Partner-Workshop
+  493  pwd
+  494  ls
+  495  npm run dev
+  496  npm install
+  497  npm install -g npm@10.8.1
+  498  npm run dev
+  499  npm run dev
+  500  gatsby clean
+  501  gatsby -v
+  502  npm run dev
+  503  npm install
+  504  npm run dev
+  505  npm install gatsby-plugin-pdf
+  506  apt-get install chromium-browser
+  507  npm install gatsby-remark-video
+  508  npm run dev
+  509  npm run deploy
+  510  git config --global user.email "dugslade@gmail.com"
+  511  git config --global user.name "dugslade"
+  512  npm run deploy
+  513  npm run deploy
+  514  npm run deploy
+  515  npm run deploy
+  516  npm run deploy
+  517  echo $HISTFILE
+  518  history | ./DougHistory.txt
+  519  echo history > DougHistory.txt
+  520  cat DougHistory.txt
+  521  history -w
+  522  history ?
+  523  history -?
+  524  history
+  525  history help
+  526  history -100 > DougHistory.txt
+  527  pwd
+  528  history -500 > DougHistory.txt
