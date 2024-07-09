@@ -1,7 +1,7 @@
 - title: Agenda
   pages:
     - path: /agenda/agenda
-- title: Overview and Presentations
+- title: Overviews and Presentations
   pages:
     - path: /SalesEnablement/sales
 - title: SevOne Labs
@@ -42,6 +42,8 @@
 
 - title: RNA Labs
   pages:
+    - title: RNA Lab Environment
+      path: /Labs/env
     - title: RNA Lab 1 - Primer and Intro
       path: /Labs/RNALab1
     - title: RNA Lab 2 - Logic

@@ -11,7 +11,7 @@ const links = {
     { href: 'https://www.ibm.com/cloud/sevone-network-performance-management', linkText: 'IBM SevOne NPM' }
   ],
   secondCol: [
-    { href: 'https://www.ibm.com/cloud/aiops', linkText: 'IBM AIOps' }
+    { href: 'https://www.ibm.com/products/rapid-network-automation', linkText: 'IBM Remote Network Automation' }
     ],
 };
 
