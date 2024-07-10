@@ -52,7 +52,7 @@ Create a new workflow like we did previously (click “Create Workflow”) and n
 ## Step 4:
 Assign a variable to be inserted into SevOne.
 
-- From Flat Layout. Create a new variable “Body”, Object, and empty {}
+- From Flat Layout. Create a new variable “Body”, Object, and empty {} (check box for Out & Log)
 ![RNALab 3](images/RNA/3-5.png)
 
 Modify the module “Assign_1”​
@@ -60,6 +60,20 @@ Modify the module “Assign_1”​
 - Variable: $Body   ​
 - Value:
 ![RNALab 3](images/RNA/3-6.png)
+
+Text to cut and paste - You will need to realign: 
+
+{
+    "Sacramento02": {
+        "Speedtest": ["Values", {
+            "timestamp1": {
+                "timestamp": 1720047251,
+                "Download": [999, "Megabits", "GAUGE"],
+                "Upload": [967, "Megabits", "GAUGE"]
+            }
+        }]
+    }
+}
 
 *This is just sample data. This example adds a new device "Sacramento02" and an object "Speedtest"*
 
