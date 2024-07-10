@@ -43,7 +43,7 @@
 - title: RNA Labs
   pages:
     - title: RNA Lab Environment
-      path: /Labs/env
+      path: /Labs/envRNA
     - title: RNA Lab 1 - Primer and Intro
       path: /Labs/RNALab1
     - title: RNA Lab 2 - Logic
