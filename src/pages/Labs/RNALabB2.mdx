@@ -3,102 +3,34 @@ title: RNALabB2
 ---
 export const Title = () => (
   <span>
-    Metadata Lab - Bonus <br />
+    Logic Lab - Bonus <br />
   </span>
 );
 ;
 
 ## Step 1: 
-Use the same workflow Lab3 or you can Clone it as Lab3-Bonus.
-
-To clone Lab3 workflow execute the following:
-- Workflows > User 
-- Select "Actions" on the right and select "Clone"
-- Enter new name "Lab3-Bonus"
-
-![RNALabB2](images/RNA/3b-1.png)
-
-## Step 2:
-Create 3 variables to be inserted into SevOne using the Flat Layout. 
-
-- Create a new variable “time”, Number, and 0.
-- Create a new variable “upload”, Number, and 0.
-- Create a new variable “download”, Number, and 0.
-
-![RNALabB2](images/RNA/3b-2.png)
+Use the same workflow Lab2 or you can clone it as Lab2B.
 
 
-## Step 3:
-Assign the time automatically using a predefined function. 
+## Step 2: 
+Select “Flat Layout” to add a new variable called “Firewalls”. 
+![RNALabB1](images/RNA/B1-1.png)
 
-- Add the function to the flow after the Start block by navigating [ Home > Common > DateTime > Timestamp Now ] and dragging it into the flow
-- Under the block we just made, edit the existing Assign block and name it something meaningful - “Assign_Time”
-- Change the existing values to:
-   - Variable: $time
-  - Value: $TimestampNow_1.result
+Set the type to [ ] Array and check the boxes for Out and Log. 
+![RNALabB1](images/RNA/B1-2.png)
 
-![RNALabB2](images/RNA/3b-3.png)
+## Step 3: 
+Change the logic inside the If_1 to find all devices that contain “FW” in their name. You can go back to Flow Layout to do this for easier visibility.
 
-## Step 4:
-Assign a random value to download variable, with JavaScript.
+Set the condition to: $ForEach_1.item.displayName.includes(‘FW’)
 
-- Add a “Function” to the flow, after ”Assign_Time” [ Home > Common > Function ]
-- Inside the Function, Object Editor, copy and paste this JavaScript code.
-   - $download = Math.floor(Math.random() * 1000) + 10
+## Step 4: 
+Inside the TRUE branch of the If block, add a new building block called ArrayPush_1. Do this by navigating to [ Common > ArrayPush ] and dropping the block above Assign_1.
 
-![RNALabB2](images/RNA/3b-4.png)
+Array: $Firewalls
+Item: $ForEach_1.item.displayName
+![RNALabB1](images/RNA/B1-3.png)
 
-## Step 5:
-Assign a random value to upload variable, with JavaScript.
-
-- Add a “Function” to the flow, after the previous Function [ Home > Common > Function ]
-- Inside the Function, Object Editor, copy and paste this JavaScript code.
-    - $upload = Math.floor(Math.random() * 1000) + 10
-
-![RNALabB2](images/RNA/3b-5.png)
-
-## Step 6:
-Add a new "Assign" block after the Function_2 "Upload" 
-
-- Variable: $Body   
-- Value: (SEE TEXT BELOW)
-
-![RNALabB2](images/RNA/3b-6.png)
-
-![RNALabB2](images/RNA/3b-6b.png)
-
-Text to cut and paste - You will need to realign: 
-```
-{
-   "Sacramento03": {
-	"Speedtest": ["Values", {
-	   "timestamp1": {
-		"timestamp": $time,
-		"Download": [$download, "Megabits", "GAUGE"],
-		"Upload": [$upload, "Megabits", "GAUGE"]
-		}
-	   }]
-	}
-}
-```
-(NOTE: We changed the Device Name from the previouse example to assist with identifying the results faster. Note the difference on this lab, we are assigning variable instead of manual values.)
-
-
-## Step 7:
-Execute and validate the workflow result.
-
-- Then hit save and run.
-![RNALab 3](images/RNA/3b-71.png)
-
-
-This should be your result inside RNA:
-![RNALab 3](images/RNA/3b-71b.png)
-
-Verify your results in SevOne(NMS) as well:
-#### Use the link provided by the instructor to access your RNASevOne Lab Environment instance. (ID & PWD: admin/SevOne)
-
-
-Devices > Device Manager > “Sacramento03” > Edit this device > Object Manager > Speedtest   (can take few minutes to reflect this data)
-![RNALab 3](images/RNA/3b-71c.png)
-
-
+## Step 5: 
+Save and run the workflow. The expected result is “Firewalls: Array [5]” with a list of 5 devices. 
+![RNALabB1](images/RNA/B1-4.png)

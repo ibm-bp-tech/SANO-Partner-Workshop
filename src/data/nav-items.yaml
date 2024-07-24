@@ -49,11 +49,11 @@
     - title: RNA Lab 2 - Logic
       path: /Labs/RNALab2
     - title: Logic Lab - Bonus
-      path: /Labs/RNALabB1
+      path: /Labs/RNALabB2
     - title: RNA Lab 3 - Metadata
       path: /Labs/RNALab3
     - title: Metadata Lab - Bonus
-      path: /Labs/RNALabB2
+      path: /Labs/RNALabB3
 
 - title: Instructor Setup Instructions
   pages:
